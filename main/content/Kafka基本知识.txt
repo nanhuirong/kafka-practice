@@ -1,0 +1,13 @@
+1.  topic
+    由生产者发布主题, topic 可以分区, 一个partition是一个有序的不可变消息序列
+    每一个message在对应的partition中有一个UID(offset)
+
+2.  Broker
+    一个kafka集群由一个或多个server组成, 一个server上运行着一个或多个进程(Broker)
+
+3.  Zookeeper
+    负责协调Consumer和Broker
+4.  Producer
+    发布消息
+5.  Consumer
+    从topic中订阅消息
