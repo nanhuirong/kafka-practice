@@ -5,6 +5,7 @@
 2.  Broker
     一个kafka集群由一个或多个server组成, 一个server上运行着一个或多个进程(Broker)
     会保存数据
+    无状态, 不会保存message的消费信息
 
 3.  Zookeeper
     负责协调Consumer和Broker
@@ -32,3 +33,4 @@
     如果leader failure, 会有一个follower自动切换为leader
 
 9.  consumer groups
+    message 在一个group中只能由一个consumer消费, 但是可以被不同的group中的consumer消费
